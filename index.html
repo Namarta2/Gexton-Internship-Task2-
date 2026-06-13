@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Banner Carousel with Navigation Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="logo">My Website</div>
+
+<ul class="nav-links">
+   <li><a href="https://internship.gextoncloud.com/" target="_blank">Home</a></li>
+   <li><a href="https://www.pexels.com/search/code/" target="_blank">Gallery</a></li>
+   <li><a href="#">Contact Page</a></li>
+</ul>
+    </nav>
+
+    <main>
+        <img src="images/banner1.jpg" alt="" class="slider">
+        <img src="images/banner2.jpg" alt="" class="slider">
+        <img src="images/banner3.jpg" alt="" class="slider">
+        <img src="images/banner4.jpg" alt="" class="slider">
+    </main>
+
+
+    <button onclick="goPrev()" class="prev">Prev</button>
+    <button onclick="goNext()" class="next">Next</button>
+
+    <div class="dots-container">
+    <span class="dot" onclick="currentSlide(0)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
