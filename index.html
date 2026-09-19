@@ -3,38 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Banner Carousel with Navigation Bar</title>
+
+    <title>Interactive Banner Carousel</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav class="navbar">
-    <div class="logo">My Website</div>
 
-<ul class="nav-links">
-   <li><a href="https://internship.gextoncloud.com/" target="_blank">Home</a></li>
-   <li><a href="https://www.pexels.com/search/code/" target="_blank">Gallery</a></li>
-   <li><a href="#">Contact Page</a></li>
-</ul>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">My Website</div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Page</a></li>
+        </ul>
     </nav>
 
-    <main>
-        <img src="banner1.jpg" alt="" class="slider">
-        <img src="banner2.jpg" alt="" class="slider">
-        <img src="banner3.jpg" alt="" class="slider">
-        <img src="banner4.jpg" alt="" class="slider">
-    </main>
+
+    <!-- Home Section -->
+    <section id="home">
+
+        <!-- Banner Carousel -->
+        <main id="gallery">
+            <img src="images/banner1.jpg" alt="Banner 1" class="slider">
+            <img src="images/banner2.jpg" alt="Banner 2" class="slider">
+            <img src="images/banner3.jpg" alt="Banner 3" class="slider">
+            <img src="images/banner4.jpg" alt="Banner 4" class="slider">
+
+            <!-- Previous Button -->
+            <button onclick="goPrev()" class="prev" aria-label="Previous slide">
+                Prev
+            </button>
+
+            <!-- Next Button -->
+            <button onclick="goNext()" class="next" aria-label="Next slide">
+                Next
+            </button>
+        </main>
+
+    </section>
 
 
-    <button onclick="goPrev()" class="prev">Prev</button>
-    <button onclick="goNext()" class="next">Next</button>
-
+    <!-- Slide Indicators -->
     <div class="dots-container">
-    <span class="dot" onclick="currentSlide(0)"></span>
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(0)" aria-label="Slide 1"></span>
+        <span class="dot" onclick="currentSlide(1)" aria-label="Slide 2"></span>
+        <span class="dot" onclick="currentSlide(2)" aria-label="Slide 3"></span>
+        <span class="dot" onclick="currentSlide(3)" aria-label="Slide 4"></span>
     </div>
 
-<script src="script.js"></script>
+
+    <!-- Contact Section -->
+    <!-- <section id="contact">
+        <h2>Contact Page</h2>
+        <p>Thank you for visiting My Website.</p>
+    </section> -->
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>
+
